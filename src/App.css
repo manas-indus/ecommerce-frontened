@@ -70,34 +70,51 @@ body {
   cursor: pointer;
 }
 
-/* Banner */
-.banner img {
-  width: 100%;
-  height: auto; /* Ensure banner image covers the full width */
-}
-
-/* Categories and Products Section */
-.product-categories, .featured-products {
+/* Main content styling */
+main {
   padding: 20px;
+  flex: 1;
+}
+
+/* Table styles */
+/* Table styles */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
   background-color: white;
-  border-radius: 8px;
-  width: 100%; /* Full width */
-  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Make sure no unintended margins exist */
-.product-categories, .featured-products {
-  margin: 0; /* Remove any external margins */
+.product-table th, .product-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center; /* Center align text */
 }
 
-.category-list, .product-list {
-  display: flex;
-  justify-content: space-around;
+.product-table th {
+  background-color: #2874f0;
+  color: white;
 }
 
-.category-item, .product-item {
-  text-align: center;
+.product-table tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
+
+.product-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.product-table td {
+  font-size: 14px;
+  color: #333;
+}
+
+.product-table td:nth-child(3) {
+  font-weight: bold;
+  color: #2874f0; /* Highlight the price */
+}
+
 
 /* Footer */
 footer.footer {
